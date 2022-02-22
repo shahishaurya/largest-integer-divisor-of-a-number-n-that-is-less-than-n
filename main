@@ -1,0 +1,6 @@
+def test(n):
+     return next(d for d in range(n - 1, 0, -1) if n % d == 0)
+n = int(input("Enter the number:"))
+print("Original number:",n)
+print("Largest integer divisor of a number n that is less than n:")
+print(test(n))
